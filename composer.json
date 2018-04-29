@@ -1,5 +1,5 @@
 {
-    "name": "ns/simplemde-bundle",
+    "name": "ludovig/simplemde-bundle",
     "type": "symfony-bundle",
     "description": "This bundle provides the simplemde markdown editor and forms to a symfony bundle",
     "minimum-stability": "stable",
