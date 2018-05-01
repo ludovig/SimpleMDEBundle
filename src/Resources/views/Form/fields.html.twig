@@ -12,7 +12,16 @@
         $('document').ready(function() {
             var element = $("#{{ id }}")[0];
             var config = {{ form.vars.editor_config|raw}};
-            var simplemde_test = new SimpleMDE(Object.assign(config, {'element': element}));
+            var simplemde_test = new SimpleMDE(Object.assign(config, {
+                'element': element,
+                autosave: {
+                    enabled: true,
+                    uniqueId: element,
+                    delay: 1000,
+                },
+                spellChecker: false,
+                indentWithTabs: false,
+            }));
         });
     </script>
 {% endblock %}
